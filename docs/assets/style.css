@@ -29,3 +29,5 @@ h1.eyebrow,h2.eyebrow{font-family:'DM Sans',sans-serif;font-size:22px;letter-spa
 .pub-meta{font-size:14px;color:var(--muted)}
 .pub-card .btn{margin-top:14px}
 @media(max-width:760px){.pub-card{padding:20px}}
+.pub-status{display:inline-block;background:#fdf1dc;color:#8a5a00;font-weight:700;font-size:12px;letter-spacing:.06em;padding:3px 10px;border-radius:999px;margin-left:6px}
+.pub-note{font-size:13px;color:var(--muted);font-style:italic}
