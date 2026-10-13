@@ -1,6 +1,6 @@
 # Research Scientist Website
 
-A generic, responsive academic website with Home, Research, Publications, CV, and Contact pages. No software, news, or blog sections.
+A responsive single-page academic website (`docs/index.html`) with Home, Research, Publications, CV, and Contact sections. No software, news, or blog sections.
 
 ## Publish now (works independently of a site generator)
 
