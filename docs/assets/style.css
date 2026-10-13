@@ -5,3 +5,14 @@ section[id]{scroll-margin-top:82px}
 .section .bodycopy{padding-bottom:0}
 .section .bodycopy h3{margin:28px 0 6px}
 @media(max-width:760px){.nav{min-height:0;padding-top:14px;padding-bottom:14px;gap:6px}section[id]{scroll-margin-top:110px}}
+/* Updates timeline: date on the left, dot on the line, text on the right */
+.timeline{list-style:none;margin:28px 0 0;padding:0;max-width:790px}
+.timeline li{display:grid;grid-template-columns:110px 1fr;gap:0 28px;position:relative;padding-bottom:26px}
+.timeline li:last-child{padding-bottom:0}
+.timeline li::before{content:"";position:absolute;left:124px;top:14px;bottom:-14px;width:2px;background:var(--line)}
+.timeline li:last-child::before{display:none}
+.timeline li::after{content:"";position:absolute;left:119px;top:8px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--accent)}
+.timeline li:first-child::after{background:var(--accent)}
+.timeline time{text-align:right;color:var(--accent);font-weight:700;font-size:14px;padding-top:2px;white-space:nowrap}
+.timeline p{margin:0 0 0 12px;color:#56646e}
+@media(max-width:760px){.timeline li{grid-template-columns:1fr;padding-left:28px}.timeline li::before{left:5px}.timeline li::after{left:0}.timeline time{text-align:left}.timeline p{margin:0}}
