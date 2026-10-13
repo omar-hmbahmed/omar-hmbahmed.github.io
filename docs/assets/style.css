@@ -31,3 +31,8 @@ h1.eyebrow,h2.eyebrow{font-family:'DM Sans',sans-serif;font-size:22px;letter-spa
 @media(max-width:760px){.pub-card{padding:20px}}
 .pub-status{display:inline-block;background:#fdf1dc;color:#8a5a00;font-weight:700;font-size:12px;letter-spacing:.06em;padding:3px 10px;border-radius:999px;margin-left:6px}
 .pub-note{font-size:13px;color:var(--muted);font-style:italic}
+/* Back-to-top button: hidden until the page is scrolled down */
+.to-top{position:fixed;right:24px;bottom:calc(24px + env(safe-area-inset-bottom,0px));width:46px;height:46px;border-radius:50%;background:var(--accent);color:white;display:grid;place-items:center;text-decoration:none;font-size:20px;font-weight:700;box-shadow:0 4px 14px rgba(24,42,55,.18);opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity .25s,transform .25s,visibility .25s;z-index:20}
+.to-top.show{opacity:1;visibility:visible;transform:none}
+.to-top:hover{background:#185a63}
+@media(max-width:760px){.to-top{right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px))}}

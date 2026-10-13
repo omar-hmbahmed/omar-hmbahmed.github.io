@@ -146,5 +146,14 @@
   <footer class="footer">
     <div class="wrap"><span>© 2026 Omar Ahmed · DPhil Candidate, University of Oxford</span><span>Built for GitHub Pages</span></div>
   </footer>
+
+  <!-- Back-to-top button: appears once you scroll down past the first screen -->
+  <a href="#home" class="to-top" id="toTop" aria-label="Back to top">↑</a>
+  <script>
+    var toTop = document.getElementById('toTop');
+    window.addEventListener('scroll', function () {
+      toTop.classList.toggle('show', window.scrollY > 500);
+    });
+  </script>
 </body>
 </html>
