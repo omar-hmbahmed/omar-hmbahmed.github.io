@@ -19,3 +19,13 @@ section[id]{scroll-margin-top:82px}
 /* Section labels used as the section headings (and the line above the intro) */
 h1.eyebrow,h2.eyebrow{font-family:'DM Sans',sans-serif;font-size:22px;letter-spacing:.16em;line-height:1.4;margin:0 0 22px}
 @media(max-width:760px){h1.eyebrow,h2.eyebrow{font-size:18px}}
+
+/* Publication cards: rounded box with venue tag, title, authors, venue, and link */
+.pub-card{background:white;border:1px solid var(--line);border-radius:12px;padding:24px 28px;margin-bottom:18px}
+.pub-card h3{margin:10px 0 6px}
+.pub-card p{margin:4px 0}
+.pub-venue{display:inline-block;background:#eaf3f1;color:var(--accent);font-weight:700;font-size:12px;letter-spacing:.06em;padding:3px 10px;border-radius:999px}
+.pub-authors{color:var(--ink)}
+.pub-meta{font-size:14px;color:var(--muted)}
+.pub-card .btn{margin-top:14px}
+@media(max-width:760px){.pub-card{padding:20px}}
