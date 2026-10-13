@@ -16,3 +16,6 @@ section[id]{scroll-margin-top:82px}
 .timeline time{text-align:right;color:var(--accent);font-weight:700;font-size:14px;padding-top:2px;white-space:nowrap}
 .timeline p{margin:0 0 0 12px;color:#56646e}
 @media(max-width:760px){.timeline li{grid-template-columns:1fr;padding-left:28px}.timeline li::before{left:5px}.timeline li::after{left:0}.timeline time{text-align:left}.timeline p{margin:0}}
+/* Section labels used as the section headings (and the line above the intro) */
+h1.eyebrow,h2.eyebrow{font-family:'DM Sans',sans-serif;font-size:22px;letter-spacing:.16em;line-height:1.4;margin:0 0 22px}
+@media(max-width:760px){h1.eyebrow,h2.eyebrow{font-size:18px}}
